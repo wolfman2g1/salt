@@ -7,12 +7,12 @@
            - append:
              - text:
                - deb http://mirror.pw/mariadb/repo/10.0/ubuntu utopic main
-
+               - deb-src http://mirror.pw/mariadb/repo/10.0/ubuntu utopic main
          {%endif%}
      pkg:
        {%if grains['Os'] == 'redhat'%}
        - name: mariadb-server
-       {%elif grains['OS'] == "Ubuntu"%}
+       {%elif grains['OS'] == "ubuntu"%}
        - name: mariadb-server
        {%endif%}
 
