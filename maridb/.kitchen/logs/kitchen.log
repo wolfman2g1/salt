@@ -1,0 +1,84 @@
+I, [2015-02-09T03:35:34.663731 #14880]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-09T03:35:34.938052 #14880]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1410>
+I, [2015-02-09T03:35:34.938237 #14880]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1410>...
+I, [2015-02-09T03:35:34.940327 #14880]  INFO -- Kitchen: -----> Testing <default-ubuntu-1410>
+I, [2015-02-09T03:35:34.940445 #14880]  INFO -- Kitchen: -----> Creating <default-ubuntu-1410>...
+I, [2015-02-09T03:38:40.996244 #14880]  INFO -- Kitchen: -----> Converging <default-ubuntu-1410>...
+E, [2015-02-09T03:38:41.002659 #14880] ERROR -- Kitchen: ------Exception-------
+E, [2015-02-09T03:38:41.002705 #14880] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-02-09T03:38:41.002723 #14880] ERROR -- Kitchen: Message: Failed to complete #converge action: [No such file or directory]
+E, [2015-02-09T03:38:41.002756 #14880] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-02-09T03:38:41.002790 #14880] ERROR -- Kitchen: Class: Errno::ENOENT
+E, [2015-02-09T03:38:41.002817 #14880] ERROR -- Kitchen: Message: No such file or directory
+E, [2015-02-09T03:38:41.002889 #14880] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-02-09T03:38:41.002903 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `block in find'
+E, [2015-02-09T03:38:41.002917 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `collect!'
+E, [2015-02-09T03:38:41.002929 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `find'
+E, [2015-02-09T03:38:41.002942 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:409:in `block in cp_r_with_filter'
+E, [2015-02-09T03:38:41.002954 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:408:in `each'
+E, [2015-02-09T03:38:41.002966 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:408:in `cp_r_with_filter'
+E, [2015-02-09T03:38:41.002978 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:362:in `prepare_formula'
+E, [2015-02-09T03:38:41.002990 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:158:in `create_sandbox'
+E, [2015-02-09T03:38:41.003002 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-02-09T03:38:41.003014 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-02-09T03:38:41.003026 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T03:38:41.003038 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T03:38:41.003050 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-02-09T03:38:41.003062 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-02-09T03:38:41.003074 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T03:38:41.003088 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T03:38:41.003101 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T03:38:41.003113 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T03:38:41.003137 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-02-09T03:38:41.003151 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T03:38:41.003163 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T03:38:41.003175 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T03:38:41.003187 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-02-09T03:38:41.003198 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:181:in `block in test'
+E, [2015-02-09T03:38:41.003210 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T03:38:41.003222 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:177:in `test'
+E, [2015-02-09T03:38:41.003234 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T03:38:41.003245 #14880] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T03:38:41.003257 #14880] ERROR -- Kitchen: ----------------------
+I, [2015-02-09T03:46:01.486472 #15010]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-09T03:46:01.771419 #15010]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1410>
+I, [2015-02-09T03:46:01.773399 #15010]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1410>...
+I, [2015-02-09T03:46:05.560993 #15010]  INFO -- Kitchen: -----> Testing <default-ubuntu-1410>
+I, [2015-02-09T03:46:05.561166 #15010]  INFO -- Kitchen: -----> Creating <default-ubuntu-1410>...
+I, [2015-02-09T03:46:44.331387 #15010]  INFO -- Kitchen: -----> Converging <default-ubuntu-1410>...
+E, [2015-02-09T03:46:44.346815 #15010] ERROR -- Kitchen: ------Exception-------
+E, [2015-02-09T03:46:44.346934 #15010] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-02-09T03:46:44.346985 #15010] ERROR -- Kitchen: Message: Failed to complete #converge action: [No such file or directory]
+E, [2015-02-09T03:46:44.347023 #15010] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-02-09T03:46:44.347086 #15010] ERROR -- Kitchen: Class: Errno::ENOENT
+E, [2015-02-09T03:46:44.347153 #15010] ERROR -- Kitchen: Message: No such file or directory
+E, [2015-02-09T03:46:44.347193 #15010] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-02-09T03:46:44.347222 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `block in find'
+E, [2015-02-09T03:46:44.347255 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `collect!'
+E, [2015-02-09T03:46:44.347289 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `find'
+E, [2015-02-09T03:46:44.347333 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:409:in `block in cp_r_with_filter'
+E, [2015-02-09T03:46:44.347372 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:408:in `each'
+E, [2015-02-09T03:46:44.347401 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:408:in `cp_r_with_filter'
+E, [2015-02-09T03:46:44.347432 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:362:in `prepare_formula'
+E, [2015-02-09T03:46:44.347615 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:158:in `create_sandbox'
+E, [2015-02-09T03:46:44.347651 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-02-09T03:46:44.347683 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-02-09T03:46:44.347711 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T03:46:44.347742 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T03:46:44.347773 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-02-09T03:46:44.347808 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-02-09T03:46:44.347836 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T03:46:44.347868 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T03:46:44.347896 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T03:46:44.347925 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T03:46:44.347957 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-02-09T03:46:44.347983 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T03:46:44.348034 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T03:46:44.348067 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T03:46:44.348101 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-02-09T03:46:44.348140 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:181:in `block in test'
+E, [2015-02-09T03:46:44.348168 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T03:46:44.348206 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:177:in `test'
+E, [2015-02-09T03:46:44.348242 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T03:46:44.348273 #15010] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T03:46:44.348304 #15010] ERROR -- Kitchen: ----------------------

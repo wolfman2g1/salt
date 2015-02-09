@@ -10,6 +10,7 @@
                - deb-src http://mirror.pw/mariadb/repo/10.0/ubuntu utopic main
          {%endif%}
      pkg:
+       - installed
        {%if grains['Os'] == 'redhat'%}
        - name: mariadb-server
        {%elif grains['OS'] == "ubuntu"%}
