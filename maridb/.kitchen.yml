@@ -11,9 +11,7 @@ provisioner:
         - mariadb
 
 platforms:
-  - name: ubuntu-14.10
   - name: centos-7.0
 
 suites:
   - name: default
-    

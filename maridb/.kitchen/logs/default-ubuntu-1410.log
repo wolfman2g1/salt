@@ -155,3 +155,199 @@ E, [2015-02-09T03:46:44.336930 #15010] ERROR -- default-ubuntu-1410: /Users/rjon
 E, [2015-02-09T03:46:44.336941 #15010] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
 E, [2015-02-09T03:46:44.336952 #15010] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
 E, [2015-02-09T03:46:44.336963 #15010] ERROR -- default-ubuntu-1410: ----------------------
+I, [2015-02-09T05:38:14.559086 #3379]  INFO -- default-ubuntu-1410: -----> Cleaning up any prior instances of <default-ubuntu-1410>
+I, [2015-02-09T05:38:14.559762 #3379]  INFO -- default-ubuntu-1410: -----> Destroying <default-ubuntu-1410>...
+I, [2015-02-09T05:38:18.262023 #3379]  INFO -- default-ubuntu-1410: /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `initialize': Permission denied - /Users/rjones/.vagrant.d/data/lock.dotlock.lock (Errno::EACCES)
+I, [2015-02-09T05:38:18.262118 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `open'
+I, [2015-02-09T05:38:18.262151 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `block in lock'
+I, [2015-02-09T05:38:18.262190 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:485:in `lock'
+I, [2015-02-09T05:38:18.262235 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+I, [2015-02-09T05:38:18.262281 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+I, [2015-02-09T05:38:18.262326 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `call'
+I, [2015-02-09T05:38:18.262378 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `action'
+I, [2015-02-09T05:38:18.262611 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:31:in `block in execute'
+I, [2015-02-09T05:38:18.262716 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:226:in `block in with_target_vms'
+I, [2015-02-09T05:38:18.262778 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `each'
+I, [2015-02-09T05:38:18.262849 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `with_target_vms'
+I, [2015-02-09T05:38:18.262889 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:30:in `execute'
+I, [2015-02-09T05:38:18.262920 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/cli.rb:42:in `execute'
+I, [2015-02-09T05:38:18.262949 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:301:in `cli'
+I, [2015-02-09T05:38:18.262978 #3379]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/bin/../embedded/gems/gems/vagrant-1.7.1/bin/vagrant:174:in `<main>'
+E, [2015-02-09T05:38:18.319341 #3379] ERROR -- default-ubuntu-1410: Destroy failed on instance <default-ubuntu-1410>.
+E, [2015-02-09T05:38:18.319593 #3379] ERROR -- default-ubuntu-1410: ------Exception-------
+E, [2015-02-09T05:38:18.319638 #3379] ERROR -- default-ubuntu-1410: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-02-09T05:38:18.319708 #3379] ERROR -- default-ubuntu-1410: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant destroy -f ----
+STDOUT: 
+STDERR: /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `initialize': Permission denied - /Users/rjones/.vagrant.d/data/lock.dotlock.lock (Errno::EACCES)
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `open'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `block in lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:485:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `call'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `action'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:31:in `block in execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:226:in `block in with_target_vms'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `each'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `with_target_vms'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:30:in `execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/cli.rb:42:in `execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:301:in `cli'
+	from /opt/vagrant/bin/../embedded/gems/gems/vagrant-1.7.1/bin/vagrant:174:in `<main>'
+---- End output of vagrant destroy -f ----
+Ran vagrant destroy -f returned 1
+E, [2015-02-09T05:38:18.319756 #3379] ERROR -- default-ubuntu-1410: ---Nested Exception---
+E, [2015-02-09T05:38:18.319793 #3379] ERROR -- default-ubuntu-1410: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2015-02-09T05:38:18.319828 #3379] ERROR -- default-ubuntu-1410: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant destroy -f ----
+STDOUT: 
+STDERR: /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `initialize': Permission denied - /Users/rjones/.vagrant.d/data/lock.dotlock.lock (Errno::EACCES)
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `open'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `block in lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:485:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `call'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `action'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:31:in `block in execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:226:in `block in with_target_vms'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `each'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `with_target_vms'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:30:in `execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/cli.rb:42:in `execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:301:in `cli'
+	from /opt/vagrant/bin/../embedded/gems/gems/vagrant-1.7.1/bin/vagrant:174:in `<main>'
+---- End output of vagrant destroy -f ----
+Ran vagrant destroy -f returned 1
+E, [2015-02-09T05:38:18.319866 #3379] ERROR -- default-ubuntu-1410: ------Backtrace-------
+E, [2015-02-09T05:38:18.319912 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-02-09T05:38:18.319950 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-02-09T05:38:18.319986 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-02-09T05:38:18.320022 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-02-09T05:38:18.320063 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:93:in `destroy'
+E, [2015-02-09T05:38:18.320099 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T05:38:18.320135 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T05:38:18.320178 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `call'
+E, [2015-02-09T05:38:18.320217 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-02-09T05:38:18.320255 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize'
+E, [2015-02-09T05:38:18.320291 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-02-09T05:38:18.320357 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T05:38:18.320394 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-02-09T05:38:18.320430 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T05:38:18.320465 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T05:38:18.320502 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:339:in `destroy_action'
+E, [2015-02-09T05:38:18.320539 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T05:38:18.320577 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T05:38:18.320615 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T05:38:18.320652 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:163:in `destroy'
+E, [2015-02-09T05:38:18.320689 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:179:in `block in test'
+E, [2015-02-09T05:38:18.320725 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-02-09T05:38:18.320761 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:177:in `test'
+E, [2015-02-09T05:38:18.320812 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T05:38:18.320850 #3379] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T05:38:18.320887 #3379] ERROR -- default-ubuntu-1410: ----------------------
+I, [2015-02-09T05:39:31.650293 #3422]  INFO -- default-ubuntu-1410: -----> Cleaning up any prior instances of <default-ubuntu-1410>
+I, [2015-02-09T05:39:31.651370 #3422]  INFO -- default-ubuntu-1410: -----> Destroying <default-ubuntu-1410>...
+I, [2015-02-09T05:39:33.758495 #3422]  INFO -- default-ubuntu-1410: /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `initialize': Permission denied - /Users/rjones/.vagrant.d/data/lock.dotlock.lock (Errno::EACCES)
+I, [2015-02-09T05:39:33.758602 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `open'
+I, [2015-02-09T05:39:33.758633 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `block in lock'
+I, [2015-02-09T05:39:33.758663 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:485:in `lock'
+I, [2015-02-09T05:39:33.758690 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+I, [2015-02-09T05:39:33.758717 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+I, [2015-02-09T05:39:33.758743 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `call'
+I, [2015-02-09T05:39:33.758770 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `action'
+I, [2015-02-09T05:39:33.758821 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:31:in `block in execute'
+I, [2015-02-09T05:39:33.758848 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:226:in `block in with_target_vms'
+I, [2015-02-09T05:39:33.758874 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `each'
+I, [2015-02-09T05:39:33.758901 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `with_target_vms'
+I, [2015-02-09T05:39:33.758927 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:30:in `execute'
+I, [2015-02-09T05:39:33.758953 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/cli.rb:42:in `execute'
+I, [2015-02-09T05:39:33.758979 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:301:in `cli'
+I, [2015-02-09T05:39:33.759009 #3422]  INFO -- default-ubuntu-1410: 	from /opt/vagrant/bin/../embedded/gems/gems/vagrant-1.7.1/bin/vagrant:174:in `<main>'
+E, [2015-02-09T05:39:33.798572 #3422] ERROR -- default-ubuntu-1410: Destroy failed on instance <default-ubuntu-1410>.
+E, [2015-02-09T05:39:33.798873 #3422] ERROR -- default-ubuntu-1410: ------Exception-------
+E, [2015-02-09T05:39:33.798925 #3422] ERROR -- default-ubuntu-1410: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-02-09T05:39:33.798970 #3422] ERROR -- default-ubuntu-1410: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant destroy -f ----
+STDOUT: 
+STDERR: /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `initialize': Permission denied - /Users/rjones/.vagrant.d/data/lock.dotlock.lock (Errno::EACCES)
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `open'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `block in lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:485:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `call'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `action'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:31:in `block in execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:226:in `block in with_target_vms'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `each'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `with_target_vms'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:30:in `execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/cli.rb:42:in `execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:301:in `cli'
+	from /opt/vagrant/bin/../embedded/gems/gems/vagrant-1.7.1/bin/vagrant:174:in `<main>'
+---- End output of vagrant destroy -f ----
+Ran vagrant destroy -f returned 1
+E, [2015-02-09T05:39:33.799059 #3422] ERROR -- default-ubuntu-1410: ---Nested Exception---
+E, [2015-02-09T05:39:33.799109 #3422] ERROR -- default-ubuntu-1410: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2015-02-09T05:39:33.799157 #3422] ERROR -- default-ubuntu-1410: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant destroy -f ----
+STDOUT: 
+STDERR: /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `initialize': Permission denied - /Users/rjones/.vagrant.d/data/lock.dotlock.lock (Errno::EACCES)
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `open'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:492:in `block in lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:485:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:491:in `lock'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `call'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/machine.rb:176:in `action'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:31:in `block in execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:226:in `block in with_target_vms'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `each'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/plugin/v2/command.rb:220:in `with_target_vms'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/plugins/commands/destroy/command.rb:30:in `execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/cli.rb:42:in `execute'
+	from /opt/vagrant/embedded/gems/gems/vagrant-1.7.1/lib/vagrant/environment.rb:301:in `cli'
+	from /opt/vagrant/bin/../embedded/gems/gems/vagrant-1.7.1/bin/vagrant:174:in `<main>'
+---- End output of vagrant destroy -f ----
+Ran vagrant destroy -f returned 1
+E, [2015-02-09T05:39:33.799215 #3422] ERROR -- default-ubuntu-1410: ------Backtrace-------
+E, [2015-02-09T05:39:33.799265 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-02-09T05:39:33.799312 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-02-09T05:39:33.799369 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-02-09T05:39:33.799413 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-02-09T05:39:33.799455 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:93:in `destroy'
+E, [2015-02-09T05:39:33.799493 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T05:39:33.799533 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T05:39:33.799568 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `call'
+E, [2015-02-09T05:39:33.799604 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-02-09T05:39:33.799639 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize'
+E, [2015-02-09T05:39:33.799674 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-02-09T05:39:33.799736 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T05:39:33.799772 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-02-09T05:39:33.799807 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T05:39:33.799842 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T05:39:33.799877 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:339:in `destroy_action'
+E, [2015-02-09T05:39:33.799912 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T05:39:33.799947 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T05:39:33.799982 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T05:39:33.800017 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:163:in `destroy'
+E, [2015-02-09T05:39:33.800057 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:179:in `block in test'
+E, [2015-02-09T05:39:33.800092 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-02-09T05:39:33.800127 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:177:in `test'
+E, [2015-02-09T05:39:33.800161 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T05:39:33.800196 #3422] ERROR -- default-ubuntu-1410: /Users/rjones/.rvm/gems/ruby-2.1.2@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T05:39:33.800246 #3422] ERROR -- default-ubuntu-1410: ----------------------
+I, [2015-02-09T05:40:02.289360 #3447]  INFO -- default-ubuntu-1410: -----> Cleaning up any prior instances of <default-ubuntu-1410>
+I, [2015-02-09T05:40:02.290750 #3447]  INFO -- default-ubuntu-1410: -----> Destroying <default-ubuntu-1410>...
+I, [2015-02-09T05:40:04.843427 #3447]  INFO -- default-ubuntu-1410: ==> default: VM not created. Moving on...
+I, [2015-02-09T05:40:04.891827 #3447]  INFO -- default-ubuntu-1410: Vagrant instance <default-ubuntu-1410> destroyed.
+I, [2015-02-09T05:40:04.894436 #3447]  INFO -- default-ubuntu-1410: Finished destroying <default-ubuntu-1410> (0m2.60s).
+I, [2015-02-09T05:40:04.894972 #3447]  INFO -- default-ubuntu-1410: -----> Testing <default-ubuntu-1410>
+I, [2015-02-09T05:40:04.895201 #3447]  INFO -- default-ubuntu-1410: -----> Creating <default-ubuntu-1410>...
+I, [2015-02-09T05:40:06.974721 #3447]  INFO -- default-ubuntu-1410: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-02-09T05:40:07.311613 #3447]  INFO -- default-ubuntu-1410: ==> default: Box 'opscode-ubuntu-14.10' could not be found. Attempting to find and install...
+I, [2015-02-09T05:40:07.312309 #3447]  INFO -- default-ubuntu-1410:     default: Box Provider: virtualbox    default: Box Version: >= 0
+I, [2015-02-09T05:40:08.127623 #3447]  INFO -- default-ubuntu-1410: ==> default: Adding box 'opscode-ubuntu-14.10' (v0) for provider: virtualbox
+I, [2015-02-09T05:40:08.133918 #3447]  INFO -- default-ubuntu-1410:     default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.10_chef-provisionerless.box
