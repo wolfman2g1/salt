@@ -1,0 +1,31 @@
+I, [2015-02-09T05:58:10.593604 #3799]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-02-09T05:58:10.594334 #3799] ERROR -- Kitchen: ------Exception-------
+E, [2015-02-09T05:58:10.594419 #3799] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-02-09T05:58:10.594463 #3799] ERROR -- Kitchen: Message: Kitchen YAML file /Users/rjones/salt/.kitchen.yml does not exist.
+E, [2015-02-09T05:58:10.594501 #3799] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-02-09T05:58:10.594537 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2015-02-09T05:58:10.594577 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:139:in `data'
+E, [2015-02-09T05:58:10.594609 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:118:in `suites'
+E, [2015-02-09T05:58:10.594647 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-02-09T05:58:10.594707 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-02-09T05:58:10.594738 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:104:in `instances'
+E, [2015-02-09T05:58:10.594776 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-02-09T05:58:10.594810 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-02-09T05:58:10.594844 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command/test.rb:43:in `block in call'
+E, [2015-02-09T05:58:10.594881 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-02-09T05:58:10.594912 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command/test.rb:41:in `call'
+E, [2015-02-09T05:58:10.594950 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-02-09T05:58:10.594980 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:209:in `test'
+E, [2015-02-09T05:58:10.595018 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-02-09T05:58:10.595048 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-02-09T05:58:10.595086 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-02-09T05:58:10.595117 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-02-09T05:58:10.595153 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-02-09T05:58:10.595188 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-02-09T05:58:10.595221 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-02-09T05:58:10.595257 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-02-09T05:58:10.595311 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/bin/kitchen:23:in `load'
+E, [2015-02-09T05:58:10.595345 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/rubies/ruby-2.1.2/bin/kitchen:23:in `<main>'
+E, [2015-02-09T05:58:10.595382 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.1.2@global/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-02-09T05:58:10.595412 #3799] ERROR -- Kitchen: /Users/rjones/.rvm/gems/ruby-2.1.2@global/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-02-09T05:58:10.595451 #3799] ERROR -- Kitchen: ----------------------
