@@ -1,6 +1,6 @@
 ---
  # add the nginx repository to yum repo
- {% if grains['OS'] == 'Redhat'%}
+ {% if grains['OS'] == 'redhat'%}
     pkgrepo.managed:
       - humanname: nginx
       - baseurl: baseurl=http://nginx.org/packages/OS/OSRELEASE/$basearch/
@@ -11,15 +11,15 @@
       # install nginx
     nginx:
       pkg:
-        {%if grains['Os'] == 'Redhat'%}
+        {%if grains['Os'] == 'redhat'%}
         - name: nginx
-        {%elif grains['OS'] == "Ubuntu"%}
+        {%elif grains['OS'] == "ubuntu"%}
         - name: nginx
         {%endif%}
 
     php:
       pkg:
-          {%if grains['Os'] == 'Redhat'%}
+          {%if grains['Os'] == 'redhat'%}
           - name: epel-release
           - name: php-fpm
           - name: php
@@ -27,7 +27,7 @@
       service.running:
 
 
-          {%elif grains['OS'] == "Ubuntu"%}
+          {%elif grains['OS'] == "ubuntu"%}
           - name: php5-fpm
           - name: php5-mysql
           {%endif%}
