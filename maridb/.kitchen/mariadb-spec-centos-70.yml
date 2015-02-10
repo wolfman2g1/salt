@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+username: vagrant
+ssh_key: "/Users/rjones/salt/maridb/.kitchen/kitchen-vagrant/mariadb-spec-centos-70/.vagrant/machines/default/virtualbox/private_key"
+port: '2201'
+last_action: create

@@ -1,2 +1,3 @@
 mariadb/.kitchen/
 lep/.kitchen/
+.kitchen.local.yml

@@ -4,14 +4,16 @@ driver:
 
 provisioner:
   name: salt_solo
-  formula: mariadb.sls
+  formula: mariadb
   state_top:
-    base:
-      '*':
-        - mariadb.sls
+        - mariadb
+  state_collection: True
+
 
 platforms:
   - name: centos-7.0
 
 suites:
   - name: default
+    run_list:
+    attributes:

@@ -1,0 +1,673 @@
+I, [2015-02-09T20:47:12.385382 #53144]  INFO -- default-centos-70: -----> Creating <default-centos-70>...
+I, [2015-02-09T20:47:14.090841 #53144]  INFO -- default-centos-70: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-02-09T20:47:14.305218 #53144]  INFO -- default-centos-70: ==> default: Importing base box 'opscode-centos-7.0'...
+I, [2015-02-09T20:47:21.157510 #53144]  INFO -- default-centos-70: [KProgress: 20%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-02-09T20:47:21.869954 #53144]  INFO -- default-centos-70: ==> default: Setting the name of the VM: default-centos-70_default_1423532841827_75132
+I, [2015-02-09T20:47:22.555472 #53144]  INFO -- default-centos-70: ==> default: Fixed port collision for 22 => 2222. Now on port 2203.
+I, [2015-02-09T20:47:22.601104 #53144]  INFO -- default-centos-70: ==> default: Clearing any previously set network interfaces...
+I, [2015-02-09T20:47:22.650557 #53144]  INFO -- default-centos-70: ==> default: Preparing network interfaces based on configuration...
+I, [2015-02-09T20:47:22.651295 #53144]  INFO -- default-centos-70:     default: Adapter 1: nat
+I, [2015-02-09T20:47:22.700757 #53144]  INFO -- default-centos-70: ==> default: Forwarding ports...
+I, [2015-02-09T20:47:22.772245 #53144]  INFO -- default-centos-70:     default: 22 => 2203 (adapter 1)
+I, [2015-02-09T20:47:22.933759 #53144]  INFO -- default-centos-70: ==> default: Booting VM...
+I, [2015-02-09T20:47:23.175744 #53144]  INFO -- default-centos-70: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-02-09T20:47:23.522120 #53144]  INFO -- default-centos-70:     default: SSH address: 127.0.0.1:2203
+I, [2015-02-09T20:47:23.522550 #53144]  INFO -- default-centos-70:     default: SSH username: vagrant    default: SSH auth method: private key
+I, [2015-02-09T20:47:38.706289 #53144]  INFO -- default-centos-70:     default: Warning: Connection timeout. Retrying...
+I, [2015-02-09T20:47:38.877270 #53144]  INFO -- default-centos-70:     default: Warning: Remote connection disconnect. Retrying...
+I, [2015-02-09T20:47:40.654210 #53144]  INFO -- default-centos-70:     default: 
+I, [2015-02-09T20:47:40.654294 #53144]  INFO -- default-centos-70:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-02-09T20:47:40.654333 #53144]  INFO -- default-centos-70:     default: this with a newly generated keypair for better security.
+I, [2015-02-09T20:47:42.122461 #53144]  INFO -- default-centos-70:     default: 
+I, [2015-02-09T20:47:42.122532 #53144]  INFO -- default-centos-70:     default: Inserting generated public key within guest...
+I, [2015-02-09T20:47:42.642950 #53144]  INFO -- default-centos-70:     default: Removing insecure key from the guest if its present...
+I, [2015-02-09T20:47:42.974986 #53144]  INFO -- default-centos-70:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-02-09T20:47:44.259224 #53144]  INFO -- default-centos-70: ==> default: Machine booted and ready!
+I, [2015-02-09T20:47:44.259774 #53144]  INFO -- default-centos-70: ==> default: Checking for guest additions in VM...
+I, [2015-02-09T20:47:44.302466 #53144]  INFO -- default-centos-70: ==> default: Setting hostname...
+I, [2015-02-09T20:47:45.069825 #53144]  INFO -- default-centos-70: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-02-09T20:47:46.958425 #53144]  INFO -- default-centos-70: Vagrant instance <default-centos-70> created.
+I, [2015-02-09T20:47:46.960102 #53144]  INFO -- default-centos-70: Finished creating <default-centos-70> (0m34.57s).
+I, [2015-02-09T20:47:46.960231 #53144]  INFO -- default-centos-70: -----> Converging <default-centos-70>...
+I, [2015-02-09T20:47:46.960939 #53144]  INFO -- default-centos-70: Preparing files for transfer
+I, [2015-02-09T20:47:46.961030 #53144]  INFO -- default-centos-70: Preparing salt-minion
+I, [2015-02-09T20:47:46.961737 #53144]  INFO -- default-centos-70: Preparing state_top
+I, [2015-02-09T20:47:46.962839 #53144]  INFO -- default-centos-70: Preparing pillars into /srv/pillar
+I, [2015-02-09T20:47:46.962941 #53144]  INFO -- default-centos-70: Preparing formula: mariadb from /Users/rjones/salt
+E, [2015-02-09T20:47:46.964381 #53144] ERROR -- default-centos-70: Converge failed on instance <default-centos-70>.
+E, [2015-02-09T20:47:46.964610 #53144] ERROR -- default-centos-70: ------Exception-------
+E, [2015-02-09T20:47:46.964643 #53144] ERROR -- default-centos-70: Class: Errno::ENOENT
+E, [2015-02-09T20:47:46.964666 #53144] ERROR -- default-centos-70: Message: No such file or directory
+E, [2015-02-09T20:47:46.964686 #53144] ERROR -- default-centos-70: ------Backtrace-------
+E, [2015-02-09T20:47:46.964710 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `block in find'
+E, [2015-02-09T20:47:46.964730 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `collect!'
+E, [2015-02-09T20:47:46.964750 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `find'
+E, [2015-02-09T20:47:46.964769 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:409:in `block in cp_r_with_filter'
+E, [2015-02-09T20:47:46.964789 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:408:in `each'
+E, [2015-02-09T20:47:46.964806 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:408:in `cp_r_with_filter'
+E, [2015-02-09T20:47:46.964822 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:362:in `prepare_formula'
+E, [2015-02-09T20:47:46.964837 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:158:in `create_sandbox'
+E, [2015-02-09T20:47:46.964853 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-02-09T20:47:46.964873 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-02-09T20:47:46.964893 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T20:47:46.964914 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T20:47:46.964933 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-02-09T20:47:46.964954 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-02-09T20:47:46.964975 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T20:47:46.965012 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T20:47:46.965065 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T20:47:46.965079 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T20:47:46.965090 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-02-09T20:47:46.965100 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T20:47:46.965123 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T20:47:46.965139 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T20:47:46.965150 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-02-09T20:47:46.965160 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T20:47:46.965169 #53144] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T20:47:46.965178 #53144] ERROR -- default-centos-70: ----------------------
+I, [2015-02-09T20:49:25.409114 #53285]  INFO -- default-centos-70: -----> Converging <default-centos-70>...
+I, [2015-02-09T20:49:25.411530 #53285]  INFO -- default-centos-70: Preparing files for transfer
+I, [2015-02-09T20:49:25.411615 #53285]  INFO -- default-centos-70: Preparing salt-minion
+I, [2015-02-09T20:49:25.412181 #53285]  INFO -- default-centos-70: Preparing state_top
+I, [2015-02-09T20:49:25.413272 #53285]  INFO -- default-centos-70: Preparing pillars into /srv/pillar
+I, [2015-02-09T20:49:25.413348 #53285]  INFO -- default-centos-70: Preparing formula: mariadb from /Users/rjones/salt
+E, [2015-02-09T20:49:25.414635 #53285] ERROR -- default-centos-70: Converge failed on instance <default-centos-70>.
+E, [2015-02-09T20:49:25.414806 #53285] ERROR -- default-centos-70: ------Exception-------
+E, [2015-02-09T20:49:25.414842 #53285] ERROR -- default-centos-70: Class: Errno::ENOENT
+E, [2015-02-09T20:49:25.414867 #53285] ERROR -- default-centos-70: Message: No such file or directory
+E, [2015-02-09T20:49:25.414891 #53285] ERROR -- default-centos-70: ------Backtrace-------
+E, [2015-02-09T20:49:25.414913 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `block in find'
+E, [2015-02-09T20:49:25.414938 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `collect!'
+E, [2015-02-09T20:49:25.414952 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/find.rb:42:in `find'
+E, [2015-02-09T20:49:25.414963 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:409:in `block in cp_r_with_filter'
+E, [2015-02-09T20:49:25.414974 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:408:in `each'
+E, [2015-02-09T20:49:25.414985 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:408:in `cp_r_with_filter'
+E, [2015-02-09T20:49:25.414996 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:362:in `prepare_formula'
+E, [2015-02-09T20:49:25.415006 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/kitchen-salt-0.0.19/lib/kitchen/provisioner/salt_solo.rb:158:in `create_sandbox'
+E, [2015-02-09T20:49:25.415017 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-02-09T20:49:25.415028 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-02-09T20:49:25.415039 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T20:49:25.415071 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T20:49:25.415086 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-02-09T20:49:25.415106 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-02-09T20:49:25.415156 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T20:49:25.415194 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T20:49:25.415212 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T20:49:25.415224 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T20:49:25.415236 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-02-09T20:49:25.415246 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T20:49:25.415257 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T20:49:25.415304 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T20:49:25.415315 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-02-09T20:49:25.415325 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T20:49:25.415335 #53285] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T20:49:25.415346 #53285] ERROR -- default-centos-70: ----------------------
+I, [2015-02-09T20:52:06.367726 #53302]  INFO -- default-centos-70: -----> Destroying <default-centos-70>...
+I, [2015-02-09T20:52:08.917215 #53302]  INFO -- default-centos-70: ==> default: Forcing shutdown of VM...
+I, [2015-02-09T20:52:10.065276 #53302]  INFO -- default-centos-70: ==> default: Destroying VM and associated drives...
+I, [2015-02-09T20:52:10.347179 #53302]  INFO -- default-centos-70: Vagrant instance <default-centos-70> destroyed.
+I, [2015-02-09T20:52:10.348753 #53302]  INFO -- default-centos-70: Finished destroying <default-centos-70> (0m3.98s).
+I, [2015-02-09T21:00:01.323364 #53400]  INFO -- default-centos-70: -----> Creating <default-centos-70>...
+I, [2015-02-09T21:00:02.763732 #53400]  INFO -- default-centos-70: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-02-09T21:00:02.957842 #53400]  INFO -- default-centos-70: ==> default: Importing base box 'opscode-centos-7.0'...
+I, [2015-02-09T21:00:10.405284 #53400]  INFO -- default-centos-70: [KProgress: 20%[KProgress: 50%[KProgress: 70%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-02-09T21:00:11.072639 #53400]  INFO -- default-centos-70: ==> default: Setting the name of the VM: default-centos-70_default_1423533611030_69970
+I, [2015-02-09T21:00:11.768947 #53400]  INFO -- default-centos-70: ==> default: Fixed port collision for 22 => 2222. Now on port 2203.
+I, [2015-02-09T21:00:11.815175 #53400]  INFO -- default-centos-70: ==> default: Clearing any previously set network interfaces...
+I, [2015-02-09T21:00:11.865666 #53400]  INFO -- default-centos-70: ==> default: Preparing network interfaces based on configuration...
+I, [2015-02-09T21:00:11.866021 #53400]  INFO -- default-centos-70:     default: Adapter 1: nat
+I, [2015-02-09T21:00:11.915924 #53400]  INFO -- default-centos-70: ==> default: Forwarding ports...
+I, [2015-02-09T21:00:11.996294 #53400]  INFO -- default-centos-70:     default: 22 => 2203 (adapter 1)
+I, [2015-02-09T21:00:12.170134 #53400]  INFO -- default-centos-70: ==> default: Booting VM...
+I, [2015-02-09T21:00:12.707120 #53400]  INFO -- default-centos-70: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2203
+I, [2015-02-09T21:00:12.707340 #53400]  INFO -- default-centos-70:     default: SSH username: vagrant
+I, [2015-02-09T21:00:12.707704 #53400]  INFO -- default-centos-70:     default: SSH auth method: private key
+I, [2015-02-09T21:00:27.884325 #53400]  INFO -- default-centos-70:     default: Warning: Connection timeout. Retrying...
+I, [2015-02-09T21:00:28.081148 #53400]  INFO -- default-centos-70:     default: Warning: Remote connection disconnect. Retrying...
+I, [2015-02-09T21:00:30.071548 #53400]  INFO -- default-centos-70:     default: 
+I, [2015-02-09T21:00:30.071609 #53400]  INFO -- default-centos-70:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-02-09T21:00:30.071640 #53400]  INFO -- default-centos-70:     default: this with a newly generated keypair for better security.
+I, [2015-02-09T21:00:31.412910 #53400]  INFO -- default-centos-70:     default: 
+I, [2015-02-09T21:00:31.412983 #53400]  INFO -- default-centos-70:     default: Inserting generated public key within guest...
+I, [2015-02-09T21:00:31.929748 #53400]  INFO -- default-centos-70:     default: Removing insecure key from the guest if its present...
+I, [2015-02-09T21:00:32.251460 #53400]  INFO -- default-centos-70:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-02-09T21:00:33.494603 #53400]  INFO -- default-centos-70: ==> default: Machine booted and ready!
+I, [2015-02-09T21:00:33.495004 #53400]  INFO -- default-centos-70: ==> default: Checking for guest additions in VM...
+I, [2015-02-09T21:00:33.538004 #53400]  INFO -- default-centos-70: ==> default: Setting hostname...
+I, [2015-02-09T21:00:34.304478 #53400]  INFO -- default-centos-70: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-02-09T21:00:36.131305 #53400]  INFO -- default-centos-70: Vagrant instance <default-centos-70> created.
+I, [2015-02-09T21:00:36.133694 #53400]  INFO -- default-centos-70: Finished creating <default-centos-70> (0m34.81s).
+I, [2015-02-09T21:00:36.133899 #53400]  INFO -- default-centos-70: -----> Converging <default-centos-70>...
+I, [2015-02-09T21:00:36.134832 #53400]  INFO -- default-centos-70: Preparing files for transfer
+I, [2015-02-09T21:00:36.134958 #53400]  INFO -- default-centos-70: Preparing salt-minion
+I, [2015-02-09T21:00:36.135759 #53400]  INFO -- default-centos-70: Preparing state_top
+I, [2015-02-09T21:00:36.137013 #53400]  INFO -- default-centos-70: Preparing pillars into /srv/pillar
+I, [2015-02-09T21:00:36.137142 #53400]  INFO -- default-centos-70: Preparing state collection
+I, [2015-02-09T21:00:36.787660 #53400]  INFO -- default-centos-70: sh: line 113: salt-call: command not found
+I, [2015-02-09T21:00:36.791886 #53400]  INFO -- default-centos-70: downloading http://bootstrap.saltstack.org
+I, [2015-02-09T21:00:36.791943 #53400]  INFO -- default-centos-70:   to file /tmp/bootstrap-salt.sh
+I, [2015-02-09T21:00:36.791962 #53400]  INFO -- default-centos-70: trying wget...
+I, [2015-02-09T21:00:42.799778 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: sh /tmp/bootstrap-salt.sh -- Version 2015.01.12
+I, [2015-02-09T21:00:43.003583 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:00:43.003650 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: System Information:
+I, [2015-02-09T21:00:43.003700 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m:   CPU:          GenuineIntel
+I, [2015-02-09T21:00:43.003725 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m:   CPU Arch:     x86_64
+I, [2015-02-09T21:00:43.003743 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m:   OS Name:      Linux
+I, [2015-02-09T21:00:43.003761 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m:   OS Version:   3.10.0-123.el7.x86_64
+I, [2015-02-09T21:00:43.003778 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m:   Distribution: CentOS 7.0
+I, [2015-02-09T21:00:43.003794 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:00:43.003810 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Installing minion
+I, [2015-02-09T21:00:43.096544 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Found function install_centos_stable_deps
+I, [2015-02-09T21:00:43.111900 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Found function install_centos_stable
+I, [2015-02-09T21:00:43.132094 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Found function install_centos_stable_post
+I, [2015-02-09T21:00:43.159887 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Found function install_centos_restart_daemons
+I, [2015-02-09T21:00:43.188751 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Found function daemons_running
+I, [2015-02-09T21:00:43.214719 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Found function install_centos_check_services
+I, [2015-02-09T21:00:43.214783 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Running install_centos_stable_deps()
+I, [2015-02-09T21:00:54.647928 #53400]  INFO -- default-centos-70: warning: /var/tmp/rpm-tmp.PMIcdA: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
+I, [2015-02-09T21:00:54.681445 #53400]  INFO -- default-centos-70: Retrieving http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+I, [2015-02-09T21:00:54.702985 #53400]  INFO -- default-centos-70: ########################################
+I, [2015-02-09T21:00:54.703045 #53400]  INFO -- default-centos-70: Updating / installing...
+I, [2015-02-09T21:00:54.704908 #53400]  INFO -- default-centos-70: #############################
+I, [2015-02-09T21:00:55.068908 #53400]  INFO -- default-centos-70: Loaded plugins: fastestmirror
+I, [2015-02-09T21:01:54.746709 #53400]  INFO -- default-centos-70: Determining fastest mirrors
+I, [2015-02-09T21:01:55.698256 #53400]  INFO -- default-centos-70:  * base: mirrors.lga7.us.voxel.net
+I, [2015-02-09T21:01:55.698796 #53400]  INFO -- default-centos-70:  * epel: mirror.us.leaseweb.net
+I, [2015-02-09T21:01:55.698844 #53400]  INFO -- default-centos-70:  * extras: centos.mirror.lstn.net
+I, [2015-02-09T21:01:55.698875 #53400]  INFO -- default-centos-70:  * updates: centos.mirror.lstn.net
+I, [2015-02-09T21:02:00.125449 #53400]  INFO -- default-centos-70: Package chkconfig-1.3.61-4.el7.x86_64 already installed and latest version
+I, [2015-02-09T21:02:00.379638 #53400]  INFO -- default-centos-70: Resolving Dependencies
+I, [2015-02-09T21:02:00.381630 #53400]  INFO -- default-centos-70: --> Running transaction check
+I, [2015-02-09T21:02:00.381682 #53400]  INFO -- default-centos-70: ---> Package PyYAML.x86_64 0:3.10-11.el7 will be installed
+I, [2015-02-09T21:02:00.404447 #53400]  INFO -- default-centos-70: --> Processing Dependency: libyaml-0.so.2()(64bit) for package: PyYAML-3.10-11.el7.x86_64
+I, [2015-02-09T21:02:00.679425 #53400]  INFO -- default-centos-70: ---> Package m2crypto.x86_64 0:0.21.1-15.el7 will be installed
+I, [2015-02-09T21:02:00.690477 #53400]  INFO -- default-centos-70: ---> Package python-crypto.x86_64 0:2.6.1-1.el7.centos will be installed
+I, [2015-02-09T21:02:00.690535 #53400]  INFO -- default-centos-70: ---> Package python-jinja2.noarch 0:2.7.2-2.el7 will be installed
+I, [2015-02-09T21:02:00.690559 #53400]  INFO -- default-centos-70: --> Processing Dependency: python-babel >= 0.8 for package: python-jinja2-2.7.2-2.el7.noarch
+I, [2015-02-09T21:02:00.690577 #53400]  INFO -- default-centos-70: --> Processing Dependency: python-markupsafe for package: python-jinja2-2.7.2-2.el7.noarch
+I, [2015-02-09T21:02:00.690616 #53400]  INFO -- default-centos-70: ---> Package python-msgpack.x86_64 0:0.4.2-4.el7 will be installed
+I, [2015-02-09T21:02:00.701181 #53400]  INFO -- default-centos-70: ---> Package python-requests.noarch 0:1.1.0-8.el7 will be installed
+I, [2015-02-09T21:02:00.701252 #53400]  INFO -- default-centos-70: --> Processing Dependency: python-urllib3 for package: python-requests-1.1.0-8.el7.noarch
+I, [2015-02-09T21:02:00.701288 #53400]  INFO -- default-centos-70: --> Processing Dependency: python-chardet for package: python-requests-1.1.0-8.el7.noarch
+I, [2015-02-09T21:02:00.701338 #53400]  INFO -- default-centos-70: ---> Package python-zmq.x86_64 0:14.3.1-1.el7 will be installed
+I, [2015-02-09T21:02:00.701357 #53400]  INFO -- default-centos-70: --> Processing Dependency: libzmq.so.3()(64bit) for package: python-zmq-14.3.1-1.el7.x86_64
+I, [2015-02-09T21:02:00.705159 #53400]  INFO -- default-centos-70: ---> Package yum-utils.noarch 0:1.1.31-25.el7_0 will be installed
+I, [2015-02-09T21:02:00.710096 #53400]  INFO -- default-centos-70: --> Processing Dependency: python-kitchen for package: yum-utils-1.1.31-25.el7_0.noarch
+I, [2015-02-09T21:02:00.710166 #53400]  INFO -- default-centos-70: --> Running transaction check
+I, [2015-02-09T21:02:00.710196 #53400]  INFO -- default-centos-70: ---> Package libyaml.x86_64 0:0.1.4-11.el7_0 will be installed
+I, [2015-02-09T21:02:00.721260 #53400]  INFO -- default-centos-70: ---> Package python-babel.noarch 0:0.9.6-8.el7 will be installed
+I, [2015-02-09T21:02:00.721319 #53400]  INFO -- default-centos-70: ---> Package python-chardet.noarch 0:2.0.1-7.el7 will be installed
+I, [2015-02-09T21:02:00.721350 #53400]  INFO -- default-centos-70: ---> Package python-kitchen.noarch 0:1.1.1-5.el7 will be installed
+I, [2015-02-09T21:02:00.721372 #53400]  INFO -- default-centos-70: ---> Package python-markupsafe.x86_64 0:0.11-10.el7 will be installed
+I, [2015-02-09T21:02:00.721389 #53400]  INFO -- default-centos-70: ---> Package python-urllib3.noarch 0:1.5-8.el7 will be installed
+I, [2015-02-09T21:02:00.721404 #53400]  INFO -- default-centos-70: --> Processing Dependency: python-six for package: python-urllib3-1.5-8.el7.noarch
+I, [2015-02-09T21:02:00.721419 #53400]  INFO -- default-centos-70: ---> Package zeromq3.x86_64 0:3.2.4-1.el7 will be installed
+I, [2015-02-09T21:02:00.732944 #53400]  INFO -- default-centos-70: --> Processing Dependency: libpgm-5.2.so.0()(64bit) for package: zeromq3-3.2.4-1.el7.x86_64
+I, [2015-02-09T21:02:00.733011 #53400]  INFO -- default-centos-70: --> Running transaction check
+I, [2015-02-09T21:02:00.733040 #53400]  INFO -- default-centos-70: ---> Package openpgm.x86_64 0:5.2.122-2.el7 will be installed
+I, [2015-02-09T21:02:00.733062 #53400]  INFO -- default-centos-70: ---> Package python-six.noarch 0:1.3.0-4.el7 will be installed
+I, [2015-02-09T21:02:01.338195 #53400]  INFO -- default-centos-70: --> Finished Dependency Resolution
+I, [2015-02-09T21:02:01.367692 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:01.367758 #53400]  INFO -- default-centos-70: Dependencies Resolved
+I, [2015-02-09T21:02:01.378952 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:01.379028 #53400]  INFO -- default-centos-70: ================================================================================
+I, [2015-02-09T21:02:01.379066 #53400]  INFO -- default-centos-70:  Package                Arch        Version                  Repository    Size
+I, [2015-02-09T21:02:01.379099 #53400]  INFO -- default-centos-70: ================================================================================
+I, [2015-02-09T21:02:01.379123 #53400]  INFO -- default-centos-70: Installing:
+I, [2015-02-09T21:02:01.379149 #53400]  INFO -- default-centos-70:  PyYAML                 x86_64      3.10-11.el7              base         153 k
+I, [2015-02-09T21:02:01.379174 #53400]  INFO -- default-centos-70:  m2crypto               x86_64      0.21.1-15.el7            base         428 k
+I, [2015-02-09T21:02:01.379226 #53400]  INFO -- default-centos-70:  python-crypto          x86_64      2.6.1-1.el7.centos       extras       470 k
+I, [2015-02-09T21:02:01.379263 #53400]  INFO -- default-centos-70:  python-jinja2          noarch      2.7.2-2.el7              base         515 k
+I, [2015-02-09T21:02:01.379292 #53400]  INFO -- default-centos-70:  python-msgpack         x86_64      0.4.2-4.el7              epel          68 k
+I, [2015-02-09T21:02:01.379318 #53400]  INFO -- default-centos-70:  python-requests        noarch      1.1.0-8.el7              base          70 k
+I, [2015-02-09T21:02:01.379343 #53400]  INFO -- default-centos-70:  python-zmq             x86_64      14.3.1-1.el7             epel         468 k
+I, [2015-02-09T21:02:01.379371 #53400]  INFO -- default-centos-70:  yum-utils              noarch      1.1.31-25.el7_0          updates      111 k
+I, [2015-02-09T21:02:01.379397 #53400]  INFO -- default-centos-70: Installing for dependencies:
+I, [2015-02-09T21:02:01.379423 #53400]  INFO -- default-centos-70:  libyaml                x86_64      0.1.4-11.el7_0           updates       55 k
+I, [2015-02-09T21:02:01.379448 #53400]  INFO -- default-centos-70:  openpgm                x86_64      5.2.122-2.el7            epel         171 k
+I, [2015-02-09T21:02:01.379564 #53400]  INFO -- default-centos-70:  python-babel           noarch      0.9.6-8.el7              base         1.4 M
+I, [2015-02-09T21:02:01.379584 #53400]  INFO -- default-centos-70:  python-chardet         noarch      2.0.1-7.el7              base         222 k
+I, [2015-02-09T21:02:01.379599 #53400]  INFO -- default-centos-70:  python-kitchen         noarch      1.1.1-5.el7              base         267 k
+I, [2015-02-09T21:02:01.379613 #53400]  INFO -- default-centos-70:  python-markupsafe      x86_64      0.11-10.el7              base          25 k
+I, [2015-02-09T21:02:01.379627 #53400]  INFO -- default-centos-70:  python-six             noarch      1.3.0-4.el7              base          18 k
+I, [2015-02-09T21:02:01.379641 #53400]  INFO -- default-centos-70:  python-urllib3         noarch      1.5-8.el7                base          41 k
+I, [2015-02-09T21:02:01.379655 #53400]  INFO -- default-centos-70:  zeromq3                x86_64      3.2.4-1.el7              epel         339 k
+I, [2015-02-09T21:02:01.379668 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:01.379680 #53400]  INFO -- default-centos-70: Transaction Summary
+I, [2015-02-09T21:02:01.379693 #53400]  INFO -- default-centos-70: ================================================================================
+I, [2015-02-09T21:02:01.379706 #53400]  INFO -- default-centos-70: Install  8 Packages (+9 Dependent packages)
+I, [2015-02-09T21:02:01.379718 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:01.379731 #53400]  INFO -- default-centos-70: Total download size: 4.7 M
+I, [2015-02-09T21:02:01.379832 #53400]  INFO -- default-centos-70: Installed size: 19 M
+I, [2015-02-09T21:02:01.379867 #53400]  INFO -- default-centos-70: Downloading packages:
+I, [2015-02-09T21:02:07.158117 #53400]  INFO -- default-centos-70: warning: /var/cache/yum/x86_64/7/updates/packages/libyaml-0.1.4-11.el7_0.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+I, [2015-02-09T21:02:07.158219 #53400]  INFO -- default-centos-70: Public key for libyaml-0.1.4-11.el7_0.x86_64.rpm is not installed
+I, [2015-02-09T21:02:07.266766 #53400]  INFO -- default-centos-70: Public key for PyYAML-3.10-11.el7.x86_64.rpm is not installed
+I, [2015-02-09T21:02:07.476058 #53400]  INFO -- default-centos-70: warning: /var/cache/yum/x86_64/7/epel/packages/openpgm-5.2.122-2.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
+I, [2015-02-09T21:02:07.476115 #53400]  INFO -- default-centos-70: Public key for openpgm-5.2.122-2.el7.x86_64.rpm is not installed
+I, [2015-02-09T21:02:14.448048 #53400]  INFO -- default-centos-70: Public key for python-crypto-2.6.1-1.el7.centos.x86_64.rpm is not installed
+I, [2015-02-09T21:02:15.046558 #53400]  INFO -- default-centos-70: --------------------------------------------------------------------------------
+I, [2015-02-09T21:02:15.046642 #53400]  INFO -- default-centos-70: Total                                              352 kB/s | 4.7 MB  00:13     
+I, [2015-02-09T21:02:15.046672 #53400]  INFO -- default-centos-70: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+I, [2015-02-09T21:02:15.049680 #53400]  INFO -- default-centos-70: Importing GPG key 0xF4A80EB5:
+I, [2015-02-09T21:02:15.049741 #53400]  INFO -- default-centos-70:  Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+I, [2015-02-09T21:02:15.049768 #53400]  INFO -- default-centos-70:  Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+I, [2015-02-09T21:02:15.049788 #53400]  INFO -- default-centos-70:  Package    : centos-release-7-0.1406.el7.centos.2.3.x86_64 (@anaconda)
+I, [2015-02-09T21:02:15.049807 #53400]  INFO -- default-centos-70:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+I, [2015-02-09T21:02:15.064932 #53400]  INFO -- default-centos-70: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+I, [2015-02-09T21:02:15.064994 #53400]  INFO -- default-centos-70: Importing GPG key 0x352C64E5:
+I, [2015-02-09T21:02:15.065016 #53400]  INFO -- default-centos-70:  Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"
+I, [2015-02-09T21:02:15.065039 #53400]  INFO -- default-centos-70:  Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5
+I, [2015-02-09T21:02:15.065085 #53400]  INFO -- default-centos-70:  Package    : epel-release-7-5.noarch (installed)
+I, [2015-02-09T21:02:15.065113 #53400]  INFO -- default-centos-70:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+I, [2015-02-09T21:02:15.089863 #53400]  INFO -- default-centos-70: Running transaction check
+I, [2015-02-09T21:02:15.117822 #53400]  INFO -- default-centos-70: Running transaction test
+I, [2015-02-09T21:02:15.200962 #53400]  INFO -- default-centos-70: Transaction test succeeded
+I, [2015-02-09T21:02:15.201019 #53400]  INFO -- default-centos-70: Running transaction
+I, [2015-02-09T21:02:15.226020 #53400]  INFO -- default-centos-70: Warning: RPMDB altered outside of yum.
+I, [2015-02-09T21:02:15.753246 #53400]  INFO -- default-centos-70:   Installing : python-chardet-2.0.1-7.el7.noarch                           1/17 
+I, [2015-02-09T21:02:15.786067 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:15.833002 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:15.882111 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:16.003440 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:16.675682 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:16.739723 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:16.766466 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:16.853555 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:17.127772 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:17.668564 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:17.757397 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:17.851237 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.275252 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.345563 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.737365 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.789276 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.804114 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.813974 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.823594 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.836058 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.851001 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.859996 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.869844 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.881374 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.891124 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.905834 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.915166 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.924747 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.936848 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.951592 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.961663 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:18.970956 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:19.047810 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:19.047867 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:19.047895 #53400]  INFO -- default-centos-70: Installed:
+I, [2015-02-09T21:02:19.047914 #53400]  INFO -- default-centos-70:   PyYAML.x86_64 0:3.10-11.el7                                                   
+I, [2015-02-09T21:02:19.047931 #53400]  INFO -- default-centos-70:   m2crypto.x86_64 0:0.21.1-15.el7                                               
+I, [2015-02-09T21:02:19.047947 #53400]  INFO -- default-centos-70:   python-crypto.x86_64 0:2.6.1-1.el7.centos                                     
+I, [2015-02-09T21:02:19.047962 #53400]  INFO -- default-centos-70:   python-jinja2.noarch 0:2.7.2-2.el7                                            
+I, [2015-02-09T21:02:19.048007 #53400]  INFO -- default-centos-70:   python-msgpack.x86_64 0:0.4.2-4.el7                                           
+I, [2015-02-09T21:02:19.048059 #53400]  INFO -- default-centos-70:   python-requests.noarch 0:1.1.0-8.el7                                          
+I, [2015-02-09T21:02:19.048093 #53400]  INFO -- default-centos-70:   python-zmq.x86_64 0:14.3.1-1.el7                                              
+I, [2015-02-09T21:02:19.048123 #53400]  INFO -- default-centos-70:   yum-utils.noarch 0:1.1.31-25.el7_0                                            
+I, [2015-02-09T21:02:19.048149 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:19.048176 #53400]  INFO -- default-centos-70: Dependency Installed:
+I, [2015-02-09T21:02:19.048203 #53400]  INFO -- default-centos-70:   libyaml.x86_64 0:0.1.4-11.el7_0       openpgm.x86_64 0:5.2.122-2.el7          
+I, [2015-02-09T21:02:19.048230 #53400]  INFO -- default-centos-70:   python-babel.noarch 0:0.9.6-8.el7     python-chardet.noarch 0:2.0.1-7.el7     
+I, [2015-02-09T21:02:19.048258 #53400]  INFO -- default-centos-70:   python-kitchen.noarch 0:1.1.1-5.el7   python-markupsafe.x86_64 0:0.11-10.el7  
+I, [2015-02-09T21:02:19.048285 #53400]  INFO -- default-centos-70:   python-six.noarch 0:1.3.0-4.el7       python-urllib3.noarch 0:1.5-8.el7       
+I, [2015-02-09T21:02:19.048312 #53400]  INFO -- default-centos-70:   zeromq3.x86_64 0:3.2.4-1.el7         
+I, [2015-02-09T21:02:19.048336 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:19.048423 #53400]  INFO -- default-centos-70: Complete!
+I, [2015-02-09T21:02:19.093118 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Running install_centos_stable()
+I, [2015-02-09T21:02:19.262738 #53400]  INFO -- default-centos-70: Loaded plugins: fastestmirror
+I, [2015-02-09T21:02:19.305916 #53400]  INFO -- default-centos-70: Loading mirror speeds from cached hostfile
+I, [2015-02-09T21:02:19.306003 #53400]  INFO -- default-centos-70:  * base: mirrors.lga7.us.voxel.net
+I, [2015-02-09T21:02:19.306028 #53400]  INFO -- default-centos-70:  * epel: mirror.us.leaseweb.net
+I, [2015-02-09T21:02:19.317111 #53400]  INFO -- default-centos-70:  * extras: centos.mirror.lstn.net
+I, [2015-02-09T21:02:19.317171 #53400]  INFO -- default-centos-70:  * updates: centos.mirror.lstn.net
+I, [2015-02-09T21:02:19.553303 #53400]  INFO -- default-centos-70: Resolving Dependencies
+I, [2015-02-09T21:02:19.553401 #53400]  INFO -- default-centos-70: --> Running transaction check
+I, [2015-02-09T21:02:19.553450 #53400]  INFO -- default-centos-70: ---> Package salt-minion.noarch 0:2014.7.0-3.el7 will be installed
+I, [2015-02-09T21:02:19.564722 #53400]  INFO -- default-centos-70: --> Processing Dependency: salt = 2014.7.0-3.el7 for package: salt-minion-2014.7.0-3.el7.noarch
+I, [2015-02-09T21:02:19.753533 #53400]  INFO -- default-centos-70: --> Running transaction check
+I, [2015-02-09T21:02:19.753633 #53400]  INFO -- default-centos-70: ---> Package salt.noarch 0:2014.7.0-3.el7 will be installed
+I, [2015-02-09T21:02:19.770658 #53400]  INFO -- default-centos-70: --> Processing Dependency: systemd-python for package: salt-2014.7.0-3.el7.noarch
+I, [2015-02-09T21:02:19.781495 #53400]  INFO -- default-centos-70: --> Processing Dependency: sshpass for package: salt-2014.7.0-3.el7.noarch
+I, [2015-02-09T21:02:19.781553 #53400]  INFO -- default-centos-70: --> Processing Dependency: pciutils for package: salt-2014.7.0-3.el7.noarch
+I, [2015-02-09T21:02:19.781580 #53400]  INFO -- default-centos-70: --> Running transaction check
+I, [2015-02-09T21:02:19.781597 #53400]  INFO -- default-centos-70: ---> Package pciutils.x86_64 0:3.2.1-4.el7 will be installed
+I, [2015-02-09T21:02:19.792450 #53400]  INFO -- default-centos-70: ---> Package sshpass.x86_64 0:1.05-5.el7 will be installed
+I, [2015-02-09T21:02:19.792533 #53400]  INFO -- default-centos-70: ---> Package systemd-python.x86_64 0:208-11.el7_0.6 will be installed
+I, [2015-02-09T21:02:19.820182 #53400]  INFO -- default-centos-70: --> Processing Dependency: systemd = 208-11.el7_0.6 for package: systemd-python-208-11.el7_0.6.x86_64
+I, [2015-02-09T21:02:19.834534 #53400]  INFO -- default-centos-70: --> Running transaction check
+I, [2015-02-09T21:02:19.834596 #53400]  INFO -- default-centos-70: ---> Package systemd.x86_64 0:208-11.el7 will be updated
+I, [2015-02-09T21:02:19.916081 #53400]  INFO -- default-centos-70: --> Processing Dependency: systemd = 208-11.el7 for package: libgudev1-208-11.el7.x86_64
+I, [2015-02-09T21:02:19.931299 #53400]  INFO -- default-centos-70: --> Processing Dependency: systemd = 208-11.el7 for package: systemd-sysv-208-11.el7.x86_64
+I, [2015-02-09T21:02:19.931367 #53400]  INFO -- default-centos-70: ---> Package systemd.x86_64 0:208-11.el7_0.6 will be an update
+I, [2015-02-09T21:02:19.972368 #53400]  INFO -- default-centos-70: --> Processing Dependency: systemd-libs = 208-11.el7_0.6 for package: systemd-208-11.el7_0.6.x86_64
+I, [2015-02-09T21:02:19.989072 #53400]  INFO -- default-centos-70: --> Running transaction check
+I, [2015-02-09T21:02:19.989145 #53400]  INFO -- default-centos-70: ---> Package libgudev1.x86_64 0:208-11.el7 will be updated
+I, [2015-02-09T21:02:20.001039 #53400]  INFO -- default-centos-70: ---> Package libgudev1.x86_64 0:208-11.el7_0.6 will be an update
+I, [2015-02-09T21:02:20.001109 #53400]  INFO -- default-centos-70: ---> Package systemd-libs.x86_64 0:208-11.el7 will be updated
+I, [2015-02-09T21:02:20.001133 #53400]  INFO -- default-centos-70: ---> Package systemd-libs.x86_64 0:208-11.el7_0.6 will be an update
+I, [2015-02-09T21:02:20.016102 #53400]  INFO -- default-centos-70: ---> Package systemd-sysv.x86_64 0:208-11.el7 will be updated
+I, [2015-02-09T21:02:20.016201 #53400]  INFO -- default-centos-70: ---> Package systemd-sysv.x86_64 0:208-11.el7_0.6 will be an update
+I, [2015-02-09T21:02:20.238661 #53400]  INFO -- default-centos-70: --> Finished Dependency Resolution
+I, [2015-02-09T21:02:20.323636 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:20.323704 #53400]  INFO -- default-centos-70: Dependencies Resolved
+I, [2015-02-09T21:02:20.338539 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:20.338675 #53400]  INFO -- default-centos-70: ================================================================================
+I, [2015-02-09T21:02:20.338722 #53400]  INFO -- default-centos-70:  Package               Arch          Version               Repository      Size
+I, [2015-02-09T21:02:20.338756 #53400]  INFO -- default-centos-70: ================================================================================
+I, [2015-02-09T21:02:20.338788 #53400]  INFO -- default-centos-70: Installing:
+I, [2015-02-09T21:02:20.338821 #53400]  INFO -- default-centos-70:  salt-minion           noarch        2014.7.0-3.el7        epel            22 k
+I, [2015-02-09T21:02:20.338855 #53400]  INFO -- default-centos-70: Installing for dependencies:
+I, [2015-02-09T21:02:20.338887 #53400]  INFO -- default-centos-70:  pciutils              x86_64        3.2.1-4.el7           base            90 k
+I, [2015-02-09T21:02:20.338949 #53400]  INFO -- default-centos-70:  salt                  noarch        2014.7.0-3.el7        epel           3.6 M
+I, [2015-02-09T21:02:20.338974 #53400]  INFO -- default-centos-70:  sshpass               x86_64        1.05-5.el7            epel            21 k
+I, [2015-02-09T21:02:20.338993 #53400]  INFO -- default-centos-70:  systemd-python        x86_64        208-11.el7_0.6        updates         83 k
+I, [2015-02-09T21:02:20.339017 #53400]  INFO -- default-centos-70: Updating for dependencies:
+I, [2015-02-09T21:02:20.339042 #53400]  INFO -- default-centos-70:  libgudev1             x86_64        208-11.el7_0.6        updates         48 k
+I, [2015-02-09T21:02:20.339062 #53400]  INFO -- default-centos-70:  systemd               x86_64        208-11.el7_0.6        updates        2.6 M
+I, [2015-02-09T21:02:20.339080 #53400]  INFO -- default-centos-70:  systemd-libs          x86_64        208-11.el7_0.6        updates        154 k
+I, [2015-02-09T21:02:20.339097 #53400]  INFO -- default-centos-70:  systemd-sysv          x86_64        208-11.el7_0.6        updates         36 k
+I, [2015-02-09T21:02:20.339114 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:20.339130 #53400]  INFO -- default-centos-70: Transaction Summary
+I, [2015-02-09T21:02:20.339147 #53400]  INFO -- default-centos-70: ================================================================================
+I, [2015-02-09T21:02:20.339164 #53400]  INFO -- default-centos-70: Install  1 Package  (+4 Dependent packages)
+I, [2015-02-09T21:02:20.339181 #53400]  INFO -- default-centos-70: Upgrade             ( 4 Dependent packages)
+I, [2015-02-09T21:02:20.339197 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:20.339213 #53400]  INFO -- default-centos-70: Total download size: 6.7 M
+I, [2015-02-09T21:02:20.339228 #53400]  INFO -- default-centos-70: Downloading packages:
+I, [2015-02-09T21:02:20.339248 #53400]  INFO -- default-centos-70: Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+I, [2015-02-09T21:02:37.500472 #53400]  INFO -- default-centos-70: --------------------------------------------------------------------------------
+I, [2015-02-09T21:02:37.500544 #53400]  INFO -- default-centos-70: Total                                              398 kB/s | 6.7 MB  00:17     
+I, [2015-02-09T21:02:37.544295 #53400]  INFO -- default-centos-70: Running transaction check
+I, [2015-02-09T21:02:37.719014 #53400]  INFO -- default-centos-70: Running transaction test
+I, [2015-02-09T21:02:37.795441 #53400]  INFO -- default-centos-70: Transaction test succeeded
+I, [2015-02-09T21:02:37.795521 #53400]  INFO -- default-centos-70: Running transaction
+I, [2015-02-09T21:02:40.094681 #53400]  INFO -- default-centos-70:   Updating   : systemd-libs-208-11.el7_0.6.x86_64                          1/13 
+I, [2015-02-09T21:02:40.907233 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:40.941109 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:40.994375 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:43.925316 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:43.995595 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.119054 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.156271 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.170570 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.194584 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.223804 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.411742 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.470973 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.482076 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.490365 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.500147 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.512334 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.521305 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.529908 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.538217 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.549584 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.567912 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.567979 #53400]  INFO -- default-centos-70:   Verifying  : libgudev1-208-11.el7.x86_64                                10/13 
+I, [2015-02-09T21:02:44.568012 #53400]  INFO -- default-centos-70:   Verifying  : systemd-libs-208-11.el7.x86_64                             11/13 
+I, [2015-02-09T21:02:44.568035 #53400]  INFO -- default-centos-70:   Verifying  : systemd-208-11.el7.x86_64                                  12/13 
+I, [2015-02-09T21:02:44.619199 #53400]  INFO -- default-centos-70:  
+I, [2015-02-09T21:02:44.619255 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:44.619274 #53400]  INFO -- default-centos-70: Installed:
+I, [2015-02-09T21:02:44.619291 #53400]  INFO -- default-centos-70:   salt-minion.noarch 0:2014.7.0-3.el7                                           
+I, [2015-02-09T21:02:44.619307 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:44.619321 #53400]  INFO -- default-centos-70: Dependency Installed:
+I, [2015-02-09T21:02:44.619335 #53400]  INFO -- default-centos-70:   pciutils.x86_64 0:3.2.1-4.el7      salt.noarch 0:2014.7.0-3.el7               
+I, [2015-02-09T21:02:44.619350 #53400]  INFO -- default-centos-70:   sshpass.x86_64 0:1.05-5.el7        systemd-python.x86_64 0:208-11.el7_0.6     
+I, [2015-02-09T21:02:44.619364 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:44.619377 #53400]  INFO -- default-centos-70: Dependency Updated:
+I, [2015-02-09T21:02:44.619390 #53400]  INFO -- default-centos-70:   libgudev1.x86_64 0:208-11.el7_0.6      systemd.x86_64 0:208-11.el7_0.6       
+I, [2015-02-09T21:02:44.619405 #53400]  INFO -- default-centos-70:   systemd-libs.x86_64 0:208-11.el7_0.6   systemd-sysv.x86_64 0:208-11.el7_0.6  
+I, [2015-02-09T21:02:44.619419 #53400]  INFO -- default-centos-70: 
+I, [2015-02-09T21:02:44.619432 #53400]  INFO -- default-centos-70: Complete!
+I, [2015-02-09T21:02:44.676488 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Running install_centos_stable_post()
+I, [2015-02-09T21:02:45.090245 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Running install_centos_check_services()
+I, [2015-02-09T21:02:45.103059 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Running install_centos_restart_daemons()
+I, [2015-02-09T21:02:48.184691 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Running daemons_running()
+I, [2015-02-09T21:02:51.245074 #53400]  INFO -- default-centos-70: [1;32m *  INFO[0m: Salt installed!
+I, [2015-02-09T21:02:51.589098 #53400]  INFO -- default-centos-70: You asked for latest and you have 2014.7.0 installed, sweet!
+I, [2015-02-09T21:02:51.589189 #53400]  INFO -- default-centos-70: -----> Installing Chef Omnibus
+I, [2015-02-09T21:02:51.589211 #53400]  INFO -- default-centos-70: downloading https://www.getchef.com/chef/install.sh
+I, [2015-02-09T21:02:51.589225 #53400]  INFO -- default-centos-70:   to file /tmp/install.sh
+I, [2015-02-09T21:02:51.589239 #53400]  INFO -- default-centos-70: trying wget...
+I, [2015-02-09T21:02:57.398075 #53400]  INFO -- default-centos-70: Downloading Chef  for el...
+I, [2015-02-09T21:02:57.398155 #53400]  INFO -- default-centos-70: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=7&m=x86_64
+I, [2015-02-09T21:02:57.398188 #53400]  INFO -- default-centos-70:   to file /tmp/install.sh.10944/metadata.txt
+I, [2015-02-09T21:02:57.398214 #53400]  INFO -- default-centos-70: trying wget...
+I, [2015-02-09T21:03:02.669982 #53400]  INFO -- default-centos-70: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-09T21:03:02.670057 #53400]  INFO -- default-centos-70: md5	3634d1a3b6ae2e5977361075da0f44cc
+I, [2015-02-09T21:03:02.670084 #53400]  INFO -- default-centos-70: sha256	0ec6162b9d0ca2b2016ff02781d84905f712d64c7a81d01b0df88f977832f310
+I, [2015-02-09T21:03:02.675795 #53400]  INFO -- default-centos-70: downloaded metadata file looks valid...
+I, [2015-02-09T21:03:02.693928 #53400]  INFO -- default-centos-70: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-09T21:03:02.693983 #53400]  INFO -- default-centos-70:   to file /tmp/install.sh.10944/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-09T21:03:02.694002 #53400]  INFO -- default-centos-70: trying wget...
+I, [2015-02-09T21:03:22.396843 #53400]  INFO -- default-centos-70: Comparing checksum with sha256sum...
+I, [2015-02-09T21:03:22.638707 #53400]  INFO -- default-centos-70: Installing Chef 
+I, [2015-02-09T21:03:22.638763 #53400]  INFO -- default-centos-70: installing with rpm...
+I, [2015-02-09T21:03:22.668663 #53400]  INFO -- default-centos-70: warning: /tmp/install.sh.10944/chef-12.0.3-1.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-02-09T21:03:22.853214 #53400]  INFO -- default-centos-70: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2015-02-09T21:03:22.874653 #53400]  INFO -- default-centos-70: Updating / installing...
+I, [2015-02-09T21:03:28.614699 #53400]  INFO -- default-centos-70:                            (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2015-02-09T21:03:29.479967 #53400]  INFO -- default-centos-70: Thank you for installing Chef!
+I, [2015-02-09T21:03:29.597599 #53400]  INFO -- default-centos-70: Transferring files to <default-centos-70>
+I, [2015-02-09T21:03:32.265129 #53400]  INFO -- default-centos-70: [INFO    ] Loading fresh modules for state activity
+I, [2015-02-09T21:03:32.449495 #53400]  INFO -- default-centos-70: [INFO    ] Fetching file from saltenv 'base', ** done ** 'top.sls'
+I, [2015-02-09T21:03:32.462462 #53400]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/modules'
+I, [2015-02-09T21:03:32.462518 #53400]  INFO -- default-centos-70: [INFO    ] Syncing modules for environment 'base'
+I, [2015-02-09T21:03:32.462535 #53400]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_modules, for base)
+I, [2015-02-09T21:03:32.480147 #53400]  INFO -- default-centos-70: [INFO    ] Caching directory '_modules/' for environment 'base'
+I, [2015-02-09T21:03:32.480223 #53400]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/states'
+I, [2015-02-09T21:03:32.480263 #53400]  INFO -- default-centos-70: [INFO    ] Syncing states for environment 'base'
+I, [2015-02-09T21:03:32.480293 #53400]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_states, for base)
+I, [2015-02-09T21:03:32.480319 #53400]  INFO -- default-centos-70: [INFO    ] Caching directory '_states/' for environment 'base'
+I, [2015-02-09T21:03:32.480368 #53400]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/grains'
+I, [2015-02-09T21:03:32.480395 #53400]  INFO -- default-centos-70: [INFO    ] Syncing grains for environment 'base'
+I, [2015-02-09T21:03:32.480421 #53400]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_grains, for base)
+I, [2015-02-09T21:03:32.480442 #53400]  INFO -- default-centos-70: [INFO    ] Caching directory '_grains/' for environment 'base'
+I, [2015-02-09T21:03:32.480457 #53400]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/renderers'
+I, [2015-02-09T21:03:32.480472 #53400]  INFO -- default-centos-70: [INFO    ] Syncing renderers for environment 'base'
+I, [2015-02-09T21:03:32.480486 #53400]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_renderers, for base)
+I, [2015-02-09T21:03:32.480500 #53400]  INFO -- default-centos-70: [INFO    ] Caching directory '_renderers/' for environment 'base'
+I, [2015-02-09T21:03:32.480551 #53400]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/returners'
+I, [2015-02-09T21:03:32.480577 #53400]  INFO -- default-centos-70: [INFO    ] Syncing returners for environment 'base'
+I, [2015-02-09T21:03:32.480631 #53400]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_returners, for base)
+I, [2015-02-09T21:03:32.480665 #53400]  INFO -- default-centos-70: [INFO    ] Caching directory '_returners/' for environment 'base'
+I, [2015-02-09T21:03:32.480694 #53400]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/outputters'
+I, [2015-02-09T21:03:32.480720 #53400]  INFO -- default-centos-70: [INFO    ] Syncing outputters for environment 'base'
+I, [2015-02-09T21:03:32.480746 #53400]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_outputters, for base)
+I, [2015-02-09T21:03:32.480773 #53400]  INFO -- default-centos-70: [INFO    ] Caching directory '_outputters/' for environment 'base'
+I, [2015-02-09T21:03:32.480801 #53400]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/utils'
+I, [2015-02-09T21:03:32.480828 #53400]  INFO -- default-centos-70: [INFO    ] Syncing utils for environment 'base'
+I, [2015-02-09T21:03:32.480863 #53400]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_utils, for base)
+I, [2015-02-09T21:03:32.480891 #53400]  INFO -- default-centos-70: [INFO    ] Caching directory '_utils/' for environment 'base'
+I, [2015-02-09T21:03:32.510240 #53400]  INFO -- default-centos-70: [INFO    ] Loading fresh modules for state activity
+I, [2015-02-09T21:03:32.788466 #53400]  INFO -- default-centos-70: local:
+I, [2015-02-09T21:03:32.788534 #53400]  INFO -- default-centos-70:     Data failed to compile:
+I, [2015-02-09T21:03:32.788565 #53400]  INFO -- default-centos-70: ----------
+I, [2015-02-09T21:03:32.788622 #53400]  INFO -- default-centos-70:     No matching sls found for 'mariadb' in env 'base'
+I, [2015-02-09T21:03:32.794237 #53400]  INFO -- default-centos-70: salt-call exit code: 0
+I, [2015-02-09T21:03:32.800683 #53400]  INFO -- default-centos-70:     Data failed to compile:
+I, [2015-02-09T21:03:32.800745 #53400]  INFO -- default-centos-70:     No matching sls found for 'mariadb' in env 'base'
+I, [2015-02-09T21:03:32.800771 #53400]  INFO -- default-centos-70: salt-call output grep exit code 0
+E, [2015-02-09T21:03:32.856715 #53400] ERROR -- default-centos-70: Converge failed on instance <default-centos-70>.
+E, [2015-02-09T21:03:32.856895 #53400] ERROR -- default-centos-70: ------Exception-------
+E, [2015-02-09T21:03:32.856928 #53400] ERROR -- default-centos-70: Class: Kitchen::ActionFailed
+E, [2015-02-09T21:03:32.856946 #53400] ERROR -- default-centos-70: Message: SSH exited (1) for command: [set -o pipefail ; sudo -E salt-call --config-dir=/tmp/kitchen/etc/salt --local state.highstate --log-level=info 2>&1 | tee /tmp/salt-call-output ; SC=$? ; echo salt-call exit code: $SC ; (sed '/grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for/d' /tmp/salt-call-output | grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for ; EC=$? ; echo salt-call output grep exit code ${EC} ; [ ${SC} -ne 0 ] && exit ${SC} ; [ ${EC} -eq 0 ] && exit 1 ; [ ${EC} -eq 1 ] && exit 0)]
+E, [2015-02-09T21:03:32.856970 #53400] ERROR -- default-centos-70: ---Nested Exception---
+E, [2015-02-09T21:03:32.856983 #53400] ERROR -- default-centos-70: Class: Kitchen::SSHFailed
+E, [2015-02-09T21:03:32.856994 #53400] ERROR -- default-centos-70: Message: SSH exited (1) for command: [set -o pipefail ; sudo -E salt-call --config-dir=/tmp/kitchen/etc/salt --local state.highstate --log-level=info 2>&1 | tee /tmp/salt-call-output ; SC=$? ; echo salt-call exit code: $SC ; (sed '/grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for/d' /tmp/salt-call-output | grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for ; EC=$? ; echo salt-call output grep exit code ${EC} ; [ ${SC} -ne 0 ] && exit ${SC} ; [ ${EC} -eq 0 ] && exit 1 ; [ ${EC} -eq 1 ] && exit 0)]
+E, [2015-02-09T21:03:32.857005 #53400] ERROR -- default-centos-70: ------Backtrace-------
+E, [2015-02-09T21:03:32.857015 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-02-09T21:03:32.857026 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-02-09T21:03:32.857037 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-02-09T21:03:32.857048 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-02-09T21:03:32.857058 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-02-09T21:03:32.857069 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-02-09T21:03:32.857080 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-02-09T21:03:32.857091 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T21:03:32.857132 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T21:03:32.857143 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-02-09T21:03:32.857154 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-02-09T21:03:32.857164 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T21:03:32.857174 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T21:03:32.857185 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T21:03:32.857195 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T21:03:32.857206 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-02-09T21:03:32.857223 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T21:03:32.857235 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T21:03:32.857252 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T21:03:32.857263 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-02-09T21:03:32.857274 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T21:03:32.857284 #53400] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T21:03:32.857294 #53400] ERROR -- default-centos-70: ----------------------
+I, [2015-02-09T21:07:07.259389 #53560]  INFO -- default-centos-70: -----> Converging <default-centos-70>...
+I, [2015-02-09T21:07:07.264567 #53560]  INFO -- default-centos-70: Preparing files for transfer
+I, [2015-02-09T21:07:07.264700 #53560]  INFO -- default-centos-70: Preparing salt-minion
+I, [2015-02-09T21:07:07.265923 #53560]  INFO -- default-centos-70: Preparing state_top
+I, [2015-02-09T21:07:07.268820 #53560]  INFO -- default-centos-70: Preparing pillars into /srv/pillar
+I, [2015-02-09T21:07:07.268998 #53560]  INFO -- default-centos-70: Preparing state collection
+I, [2015-02-09T21:07:08.561778 #53560]  INFO -- default-centos-70: You asked for latest and you have 2014.7.0 installed, sweet!
+I, [2015-02-09T21:07:08.621779 #53560]  INFO -- default-centos-70: Transferring files to <default-centos-70>
+I, [2015-02-09T21:07:47.146179 #53573]  INFO -- default-centos-70: -----> Converging <default-centos-70>...
+I, [2015-02-09T21:07:47.148673 #53573]  INFO -- default-centos-70: Preparing files for transfer
+I, [2015-02-09T21:07:47.148769 #53573]  INFO -- default-centos-70: Preparing salt-minion
+I, [2015-02-09T21:07:47.149463 #53573]  INFO -- default-centos-70: Preparing state_top
+I, [2015-02-09T21:07:47.151076 #53573]  INFO -- default-centos-70: Preparing pillars into /srv/pillar
+I, [2015-02-09T21:07:47.151179 #53573]  INFO -- default-centos-70: Preparing state collection
+I, [2015-02-09T21:07:48.466597 #53573]  INFO -- default-centos-70: You asked for latest and you have 2014.7.0 installed, sweet!
+I, [2015-02-09T21:07:48.596284 #53573]  INFO -- default-centos-70: Transferring files to <default-centos-70>
+I, [2015-02-09T21:07:51.518722 #53573]  INFO -- default-centos-70: [INFO    ] Loading fresh modules for state activity
+I, [2015-02-09T21:07:51.704467 #53573]  INFO -- default-centos-70: [INFO    ] Fetching file from saltenv 'base', ** skipped ** latest already in cache 'salt://top.sls'
+I, [2015-02-09T21:07:51.715694 #53573]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/modules'
+I, [2015-02-09T21:07:51.715763 #53573]  INFO -- default-centos-70: [INFO    ] Syncing modules for environment 'base'
+I, [2015-02-09T21:07:51.715805 #53573]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_modules, for base)
+I, [2015-02-09T21:07:51.739096 #53573]  INFO -- default-centos-70: [INFO    ] Caching directory '_modules/' for environment 'base'
+I, [2015-02-09T21:07:51.739214 #53573]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/states'
+I, [2015-02-09T21:07:51.739341 #53573]  INFO -- default-centos-70: [INFO    ] Syncing states for environment 'base'
+I, [2015-02-09T21:07:51.739391 #53573]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_states, for base)
+I, [2015-02-09T21:07:51.739425 #53573]  INFO -- default-centos-70: [INFO    ] Caching directory '_states/' for environment 'base'
+I, [2015-02-09T21:07:51.739493 #53573]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/grains'
+I, [2015-02-09T21:07:51.739527 #53573]  INFO -- default-centos-70: [INFO    ] Syncing grains for environment 'base'
+I, [2015-02-09T21:07:51.739556 #53573]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_grains, for base)
+I, [2015-02-09T21:07:51.739583 #53573]  INFO -- default-centos-70: [INFO    ] Caching directory '_grains/' for environment 'base'
+I, [2015-02-09T21:07:51.739610 #53573]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/renderers'
+I, [2015-02-09T21:07:51.739638 #53573]  INFO -- default-centos-70: [INFO    ] Syncing renderers for environment 'base'
+I, [2015-02-09T21:07:51.739665 #53573]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_renderers, for base)
+I, [2015-02-09T21:07:51.739694 #53573]  INFO -- default-centos-70: [INFO    ] Caching directory '_renderers/' for environment 'base'
+I, [2015-02-09T21:07:51.739722 #53573]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/returners'
+I, [2015-02-09T21:07:51.739748 #53573]  INFO -- default-centos-70: [INFO    ] Syncing returners for environment 'base'
+I, [2015-02-09T21:07:51.739778 #53573]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_returners, for base)
+I, [2015-02-09T21:07:51.739809 #53573]  INFO -- default-centos-70: [INFO    ] Caching directory '_returners/' for environment 'base'
+I, [2015-02-09T21:07:51.739904 #53573]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/outputters'
+I, [2015-02-09T21:07:51.739936 #53573]  INFO -- default-centos-70: [INFO    ] Syncing outputters for environment 'base'
+I, [2015-02-09T21:07:51.740299 #53573]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_outputters, for base)
+I, [2015-02-09T21:07:51.740397 #53573]  INFO -- default-centos-70: [INFO    ] Caching directory '_outputters/' for environment 'base'
+I, [2015-02-09T21:07:51.740456 #53573]  INFO -- default-centos-70: [INFO    ] Creating module dir '/var/cache/salt/minion/extmods/utils'
+I, [2015-02-09T21:07:51.740498 #53573]  INFO -- default-centos-70: [INFO    ] Syncing utils for environment 'base'
+I, [2015-02-09T21:07:51.740531 #53573]  INFO -- default-centos-70: [INFO    ] Loading cache from salt://_utils, for base)
+I, [2015-02-09T21:07:51.740562 #53573]  INFO -- default-centos-70: [INFO    ] Caching directory '_utils/' for environment 'base'
+I, [2015-02-09T21:07:51.761945 #53573]  INFO -- default-centos-70: [INFO    ] Loading fresh modules for state activity
+I, [2015-02-09T21:07:52.030183 #53573]  INFO -- default-centos-70: local:
+I, [2015-02-09T21:07:52.030276 #53573]  INFO -- default-centos-70:     Data failed to compile:
+I, [2015-02-09T21:07:52.030548 #53573]  INFO -- default-centos-70: ----------
+I, [2015-02-09T21:07:52.030584 #53573]  INFO -- default-centos-70:     No matching sls found for 'mariadb' in env 'base'
+I, [2015-02-09T21:07:52.038309 #53573]  INFO -- default-centos-70: salt-call exit code: 0
+I, [2015-02-09T21:07:52.044661 #53573]  INFO -- default-centos-70:     Data failed to compile:
+I, [2015-02-09T21:07:52.044741 #53573]  INFO -- default-centos-70:     No matching sls found for 'mariadb' in env 'base'
+I, [2015-02-09T21:07:52.044781 #53573]  INFO -- default-centos-70: salt-call output grep exit code 0
+E, [2015-02-09T21:07:52.085157 #53573] ERROR -- default-centos-70: Converge failed on instance <default-centos-70>.
+E, [2015-02-09T21:07:52.085316 #53573] ERROR -- default-centos-70: ------Exception-------
+E, [2015-02-09T21:07:52.085358 #53573] ERROR -- default-centos-70: Class: Kitchen::ActionFailed
+E, [2015-02-09T21:07:52.085388 #53573] ERROR -- default-centos-70: Message: SSH exited (1) for command: [set -o pipefail ; sudo -E salt-call --config-dir=/tmp/kitchen/etc/salt --local state.highstate --log-level=info 2>&1 | tee /tmp/salt-call-output ; SC=$? ; echo salt-call exit code: $SC ; (sed '/grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for/d' /tmp/salt-call-output | grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for ; EC=$? ; echo salt-call output grep exit code ${EC} ; [ ${SC} -ne 0 ] && exit ${SC} ; [ ${EC} -eq 0 ] && exit 1 ; [ ${EC} -eq 1 ] && exit 0)]
+E, [2015-02-09T21:07:52.085429 #53573] ERROR -- default-centos-70: ---Nested Exception---
+E, [2015-02-09T21:07:52.085468 #53573] ERROR -- default-centos-70: Class: Kitchen::SSHFailed
+E, [2015-02-09T21:07:52.085489 #53573] ERROR -- default-centos-70: Message: SSH exited (1) for command: [set -o pipefail ; sudo -E salt-call --config-dir=/tmp/kitchen/etc/salt --local state.highstate --log-level=info 2>&1 | tee /tmp/salt-call-output ; SC=$? ; echo salt-call exit code: $SC ; (sed '/grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for/d' /tmp/salt-call-output | grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for ; EC=$? ; echo salt-call output grep exit code ${EC} ; [ ${SC} -ne 0 ] && exit ${SC} ; [ ${EC} -eq 0 ] && exit 1 ; [ ${EC} -eq 1 ] && exit 0)]
+E, [2015-02-09T21:07:52.085511 #53573] ERROR -- default-centos-70: ------Backtrace-------
+E, [2015-02-09T21:07:52.085533 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-02-09T21:07:52.085555 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-02-09T21:07:52.085577 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-02-09T21:07:52.085617 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-02-09T21:07:52.085639 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-02-09T21:07:52.085662 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-02-09T21:07:52.085683 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-02-09T21:07:52.085704 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T21:07:52.085725 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T21:07:52.085747 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-02-09T21:07:52.085769 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-02-09T21:07:52.085789 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T21:07:52.085834 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T21:07:52.085858 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T21:07:52.085879 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T21:07:52.085898 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-02-09T21:07:52.085919 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T21:07:52.085954 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T21:07:52.085979 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T21:07:52.086001 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-02-09T21:07:52.086024 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T21:07:52.086047 #53573] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T21:07:52.086070 #53573] ERROR -- default-centos-70: ----------------------
+I, [2015-02-09T21:13:16.673803 #53608]  INFO -- default-centos-70: -----> Converging <default-centos-70>...
+I, [2015-02-09T21:13:16.676548 #53608]  INFO -- default-centos-70: Preparing files for transfer
+I, [2015-02-09T21:13:16.676669 #53608]  INFO -- default-centos-70: Preparing salt-minion
+I, [2015-02-09T21:13:16.677499 #53608]  INFO -- default-centos-70: Preparing state_top
+I, [2015-02-09T21:13:16.679001 #53608]  INFO -- default-centos-70: Preparing pillars into /srv/pillar
+I, [2015-02-09T21:13:16.679175 #53608]  INFO -- default-centos-70: Preparing state collection
+I, [2015-02-09T21:13:17.809847 #53608]  INFO -- default-centos-70: You asked for latest and you have 2014.7.0 installed, sweet!
+I, [2015-02-09T21:13:17.900187 #53608]  INFO -- default-centos-70: Transferring files to <default-centos-70>
+I, [2015-02-09T21:13:20.876162 #53608]  INFO -- default-centos-70: [INFO    ] Loading fresh modules for state activity
+I, [2015-02-09T21:13:21.091005 #53608]  INFO -- default-centos-70: [INFO    ] Fetching file from saltenv 'base', ** done ** 'top.sls'
+I, [2015-02-09T21:13:21.173325 #53608]  INFO -- default-centos-70: local:
+I, [2015-02-09T21:13:21.173404 #53608]  INFO -- default-centos-70:     Data failed to compile:
+I, [2015-02-09T21:13:21.173442 #53608]  INFO -- default-centos-70: ----------
+I, [2015-02-09T21:13:21.173469 #53608]  INFO -- default-centos-70:     Traceback (most recent call last):
+I, [2015-02-09T21:13:21.173498 #53608]  INFO -- default-centos-70:   File "/usr/lib/python2.7/site-packages/salt/state.py", line 2817, in call_highstate
+I, [2015-02-09T21:13:21.173528 #53608]  INFO -- default-centos-70:     top = self.get_top()
+I, [2015-02-09T21:13:21.173551 #53608]  INFO -- default-centos-70:   File "/usr/lib/python2.7/site-packages/salt/state.py", line 2320, in get_top
+I, [2015-02-09T21:13:21.173574 #53608]  INFO -- default-centos-70:     return self.merge_tops(tops)
+I, [2015-02-09T21:13:21.173595 #53608]  INFO -- default-centos-70:   File "/usr/lib/python2.7/site-packages/salt/state.py", line 2243, in merge_tops
+I, [2015-02-09T21:13:21.173616 #53608]  INFO -- default-centos-70:     for saltenv, targets in ctop.items():
+I, [2015-02-09T21:13:21.173637 #53608]  INFO -- default-centos-70: AttributeError: 'list' object has no attribute 'items'
+I, [2015-02-09T21:13:21.183567 #53608]  INFO -- default-centos-70: salt-call exit code: 0
+I, [2015-02-09T21:13:21.191858 #53608]  INFO -- default-centos-70:     Data failed to compile:
+I, [2015-02-09T21:13:21.191934 #53608]  INFO -- default-centos-70: salt-call output grep exit code 0
+E, [2015-02-09T21:13:21.240926 #53608] ERROR -- default-centos-70: Converge failed on instance <default-centos-70>.
+E, [2015-02-09T21:13:21.241283 #53608] ERROR -- default-centos-70: ------Exception-------
+E, [2015-02-09T21:13:21.241336 #53608] ERROR -- default-centos-70: Class: Kitchen::ActionFailed
+E, [2015-02-09T21:13:21.241369 #53608] ERROR -- default-centos-70: Message: SSH exited (1) for command: [set -o pipefail ; sudo -E salt-call --config-dir=/tmp/kitchen/etc/salt --local state.highstate --log-level=info 2>&1 | tee /tmp/salt-call-output ; SC=$? ; echo salt-call exit code: $SC ; (sed '/grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for/d' /tmp/salt-call-output | grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for ; EC=$? ; echo salt-call output grep exit code ${EC} ; [ ${SC} -ne 0 ] && exit ${SC} ; [ ${EC} -eq 0 ] && exit 1 ; [ ${EC} -eq 1 ] && exit 0)]
+E, [2015-02-09T21:13:21.241445 #53608] ERROR -- default-centos-70: ---Nested Exception---
+E, [2015-02-09T21:13:21.241521 #53608] ERROR -- default-centos-70: Class: Kitchen::SSHFailed
+E, [2015-02-09T21:13:21.241579 #53608] ERROR -- default-centos-70: Message: SSH exited (1) for command: [set -o pipefail ; sudo -E salt-call --config-dir=/tmp/kitchen/etc/salt --local state.highstate --log-level=info 2>&1 | tee /tmp/salt-call-output ; SC=$? ; echo salt-call exit code: $SC ; (sed '/grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for/d' /tmp/salt-call-output | grep -e Result.*False -e Data.failed.to.compile -e No.matching.sls.found.for ; EC=$? ; echo salt-call output grep exit code ${EC} ; [ ${SC} -ne 0 ] && exit ${SC} ; [ ${EC} -eq 0 ] && exit 1 ; [ ${EC} -eq 1 ] && exit 0)]
+E, [2015-02-09T21:13:21.241605 #53608] ERROR -- default-centos-70: ------Backtrace-------
+E, [2015-02-09T21:13:21.241644 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-02-09T21:13:21.241718 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-02-09T21:13:21.241764 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-02-09T21:13:21.241818 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-02-09T21:13:21.241911 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-02-09T21:13:21.241951 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-02-09T21:13:21.241970 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-02-09T21:13:21.241986 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-09T21:13:21.242005 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-09T21:13:21.242022 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-02-09T21:13:21.242040 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-02-09T21:13:21.242059 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-09T21:13:21.242078 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-09T21:13:21.242096 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-09T21:13:21.242116 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-09T21:13:21.242163 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-02-09T21:13:21.242184 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-09T21:13:21.242221 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-09T21:13:21.242328 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-09T21:13:21.242379 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-02-09T21:13:21.242412 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-09T21:13:21.242454 #53608] ERROR -- default-centos-70: /Users/rjones/.rvm/gems/ruby-2.2.0@global/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-09T21:13:21.242473 #53608] ERROR -- default-centos-70: ----------------------
+I, [2015-02-09T21:15:44.729836 #53622]  INFO -- default-centos-70: -----> Destroying <default-centos-70>...
+I, [2015-02-09T21:15:48.094049 #53622]  INFO -- default-centos-70: ==> default: Forcing shutdown of VM...
+I, [2015-02-09T21:15:49.233644 #53622]  INFO -- default-centos-70: ==> default: Destroying VM and associated drives...
+I, [2015-02-09T21:15:49.579814 #53622]  INFO -- default-centos-70: Vagrant instance <default-centos-70> destroyed.
+I, [2015-02-09T21:15:49.582486 #53622]  INFO -- default-centos-70: Finished destroying <default-centos-70> (0m4.85s).
